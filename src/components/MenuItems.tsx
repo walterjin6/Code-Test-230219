@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-
+import Dropdown from './Dropdown'
 
 import { Link } from 'react-router-dom'
 type PropsType = {
@@ -77,7 +77,11 @@ const MenuItems = ({ items, depthLevel }: PropsType) => {
               <span className='arrow' />
             )}
           </button>
-
+          <Dropdown
+            depthLevel={depthLevel}
+            submenus={items.submenu}
+            dropdown={dropdown}
+          />
         </>
       ) : !items.url && items.submenu ? (
         <>
@@ -91,7 +95,11 @@ const MenuItems = ({ items, depthLevel }: PropsType) => {
             {items.title}{' '}
             {depthLevel > 0 ? <span>&raquo;</span> : <span className='arrow' />}
           </button>
-   
+          <Dropdown
+            depthLevel={depthLevel}
+            submenus={items.submenu}
+            dropdown={dropdown}
+          />
         </>
       ) : (
         <Link
