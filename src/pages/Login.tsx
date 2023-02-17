@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
+import axios from '../api/axios'
+const LOGIN_URL = '/auth'
 
 const Login = () => {
   const userRef = useRef<any>()
@@ -19,7 +21,32 @@ const Login = () => {
   }, [username, password])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
+      e.preventDefault()
+      try {
+        const response = await axios.post(
+          LOGIN_URL,
+          JSON.stringify({ username, password }),
+          {
+            headers: { 'Content-Type': 'application/json' },
+            withCredentials: true,
+          }
+        )
+        console.log(JSON.stringify(response?.data))
+        setUsername('')
+        setPassword('')
+        setSuccess(true)
+      } catch (err: any) {
+        if (!err?.response) {
+          setErrMsg('No Server Response')
+        } else if (err.response?.status === 400) {
+          setErrMsg('Missing Username or Password')
+        } else if (err.response?.status === 401) {
+          setErrMsg('Wrong username or password')
+        } else {
+          setErrMsg('Login Failed')
+        }
+        errRef.current.focus()
+      }
   }
 
   const handleUserInput = (e: React.FormEvent<HTMLInputElement>) =>
