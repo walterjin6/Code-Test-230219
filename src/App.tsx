@@ -12,6 +12,7 @@ import AboutWho from './pages/AboutWho'
 import OurValues from './pages/OurValues'
 import Clothing from './pages/Clothing'
 import Adults from './pages/Adults'
+import Login from './pages/Login'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path='login' element={<Login />} />
           <Route path='products' element={<Products />} />
           <Route path='about' element={<About />} />
           <Route path='shoes' element={<Shoes />} />
