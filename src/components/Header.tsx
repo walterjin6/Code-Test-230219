@@ -1,4 +1,4 @@
-
+import Navbar from './Navbar'
 
 import { Link } from 'react-router-dom'
 
@@ -9,7 +9,7 @@ const Header = () => {
         <Link to='/' className='logo'>
           Logo
         </Link>
-       
+        <Navbar />
       </div>
     </header>
   )
