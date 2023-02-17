@@ -20,7 +20,6 @@ const Login = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-
   }
 
   const handleUserInput = (e: React.FormEvent<HTMLInputElement>) =>
@@ -31,8 +30,6 @@ const Login = () => {
   const errClass = errMsg
     ? 'text-xl font-bold text-red-700 justify-center items-center text-center'
     : 'hidden'
-
-  //if (isLoading) return <PulseLoader color={"#FFF"} />
 
   const content = (
     <>
