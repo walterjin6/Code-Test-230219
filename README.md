@@ -34,18 +34,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Main Tech Stacks used
 
-### TypeScript: Programming Language
-
-### React: To construct UI components
-
-### React Router: To navigate between pages
-
-### Redux Toolkit: To share user name accross components
-
-### TailwindCSS: To style the UI
-
-### Axios: To make HTTP requests
-
-### MSW (Mock Service Worker): To mock APIs and web products.
-
-### Jest: To run tests and provide test coverage
+1. TypeScript: Programming Language
+2. React: To construct UI components
+3. React Router: To navigate between pages
+4. Redux Toolkit: To share user name accross components
+5. TailwindCSS: To style the UI
+6. Axios: To make HTTP requests
+7. MSW (Mock Service Worker): To mock APIs and web products.
+8. Jest: To run tests and provide test coverage
