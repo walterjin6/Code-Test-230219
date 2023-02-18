@@ -44,7 +44,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
             onMouseLeave={[Function]}
           >
             <a
-              className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+              className="block  text-left  px-4 py-3 hover:bg-sky-200"
               href="/"
               onClick={[Function]}
             >
@@ -65,7 +65,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
               type="button"
             >
               <a
-                className="inline-block px-4 py-3 text-left hover:bg-sky-200"
+                className="block px-4 py-3 text-left hover:bg-sky-200"
                 href="/products"
                 onClick={[Function]}
               >
@@ -85,7 +85,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                 onMouseLeave={[Function]}
               >
                 <a
-                  className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                  className="block  text-left  px-4 py-3 hover:bg-sky-200"
                   href="/shoes"
                   onClick={[Function]}
                 >
@@ -106,7 +106,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                   type="button"
                 >
                   <a
-                    className="inline-block px-4 py-3 text-left hover:bg-sky-200"
+                    className="block px-4 py-3 text-left hover:bg-sky-200"
                     href="/clothing"
                     onClick={[Function]}
                   >
@@ -126,7 +126,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                     onMouseLeave={[Function]}
                   >
                     <a
-                      className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                      className="block  text-left  px-4 py-3 hover:bg-sky-200"
                       href="/kids"
                       onClick={[Function]}
                     >
@@ -147,7 +147,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                       type="button"
                     >
                       <a
-                        className="inline-block px-4 py-3 text-left hover:bg-sky-200"
+                        className="block px-4 py-3 text-left hover:bg-sky-200"
                         href="/adults"
                         onClick={[Function]}
                       >
@@ -167,7 +167,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                         onMouseLeave={[Function]}
                       >
                         <a
-                          className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                          className="block  text-left  px-4 py-3 hover:bg-sky-200"
                           href="/men"
                           onClick={[Function]}
                         >
@@ -181,7 +181,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                         onMouseLeave={[Function]}
                       >
                         <a
-                          className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                          className="block  text-left  px-4 py-3 hover:bg-sky-200"
                           href="/Women"
                           onClick={[Function]}
                         >
@@ -199,7 +199,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                 onMouseLeave={[Function]}
               >
                 <a
-                  className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                  className="block  text-left  px-4 py-3 hover:bg-sky-200"
                   href="/gifts"
                   onClick={[Function]}
                 >
@@ -222,7 +222,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
               type="button"
             >
               <a
-                className="inline-block px-4 py-3 text-left hover:bg-sky-200"
+                className="block px-4 py-3 text-left hover:bg-sky-200"
                 href="/about"
                 onClick={[Function]}
               >
@@ -242,7 +242,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                 onMouseLeave={[Function]}
               >
                 <a
-                  className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                  className="block  text-left  px-4 py-3 hover:bg-sky-200"
                   href="/who-we-are"
                   onClick={[Function]}
                 >
@@ -256,7 +256,7 @@ exports[`Test suits for Layout should match with snapshot 1`] = `
                 onMouseLeave={[Function]}
               >
                 <a
-                  className="inline-block  text-left  px-4 py-3 hover:bg-sky-200"
+                  className="block  text-left  px-4 py-3 hover:bg-sky-200"
                   href="/our-values"
                   onClick={[Function]}
                 >

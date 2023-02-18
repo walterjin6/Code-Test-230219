@@ -1,6 +1,18 @@
-# Getting Started with Create React App
+# Nested Menu And Login Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The project aims to create a login page and a navigation header with nested menu, establish routing between pages. The project also includes a login form that enables the user to complete the login process.
+
+The application is hosted [here](https://search-hacker-news.herokuapp.com).
+
+## Features
+
+After the page is loaded, you can navigate the web pages by clicking the menu button on the navigation header bar.
+
+Click the Login button, Login form will be displayed.  The login logic is as follows:
+
+1. If username or password is wrong, "Wrong username or password" will be displayed.
+2. If username is "admin" and password is "12345", "You are logged in!" will be displayed, and Login button on Navbar will be changed to "Welcome, admin!"
+3. If username or password is not provided, "All fields are required" will be displayed.
 
 ## Available Scripts
 
@@ -8,39 +20,32 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner and run all the tests.<br>
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Main Tech Stacks used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### TypeScript: Programming Language
 
-### `npm run eject`
+### React: To construct UI components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### React Router: To navigate between pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Redux Toolkit: To share user name accross components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### TailwindCSS: To style the UI
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Axios: To make HTTP requests
 
-## Learn More
+### MSW (Mock Service Worker): To mock APIs and web products.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Jest: To run tests and provide test coverage
