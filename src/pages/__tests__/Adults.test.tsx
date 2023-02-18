@@ -3,9 +3,9 @@ import '@testing-library/jest-dom/extend-expect'
 import Adults from '../Adults'
 
 describe('Test suits for Adults component', () => {
-  it('should display "Adults pag"', () => {
+  it('should display "Adults page"', () => {
     const { getByTestId } = render(<Adults />)
     const element = getByTestId('adults-1')
-    expect(element).toHaveTextContent('Adults pag')
+    expect(element).toHaveTextContent('Adults page')
   })
 })
