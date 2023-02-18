@@ -7,7 +7,7 @@ import { store } from './store/store'
 import { Provider } from 'react-redux'
 
 if (process.env.NODE_ENV === 'development') {
-  const { worker } = require('./mocks/browser')
+  const { worker } = require('./tests/mocks/browser')
   worker.start({
     onUnhandledRequest: 'bypass',
   })
