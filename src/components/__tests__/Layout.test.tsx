@@ -1,11 +1,11 @@
 import renderer from 'react-test-renderer'
 import { BrowserRouter } from 'react-router-dom'
-import Header from '../Header'
+import Layout from '../Layout'
 import { Provider } from 'react-redux'
 import { configureStore } from '@reduxjs/toolkit'
 import appReducer from '../../store/appSlice'
 
-describe('Test suits for Header', () => {
+describe('Test suits for Layout', () => {
   let store: any
 
   beforeEach(() => {
@@ -20,7 +20,7 @@ describe('Test suits for Header', () => {
       .create(
         <Provider store={store}>
           <BrowserRouter>
-            <Header />
+            <Layout />
           </BrowserRouter>
         </Provider>
       )

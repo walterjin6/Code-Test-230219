@@ -25,7 +25,7 @@ const Dropdown = ({ submenus, dropdown, depthLevel }: PropsType) => {
   return (
     <ul
       className={`${dropdownBoxClass} ${dropdownClass} ${
-        dropdown ? ' block' : 'hidden'
+        dropdown ? 'block' : 'hidden'
       }`}
     >
       {submenus.map((submenu: any, index: number) => (

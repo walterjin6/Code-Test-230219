@@ -24,7 +24,7 @@ describe('Login component tests', () => {
   afterEach(() => server.resetHandlers())
   afterAll(() => server.close())
 
-  it('should submit the form and display the success message', async () => {
+  it('should submit the form, display the success message, and display user name on Navigation Header Bar', async () => {
     render(
       <Provider store={store}>
         <BrowserRouter>
