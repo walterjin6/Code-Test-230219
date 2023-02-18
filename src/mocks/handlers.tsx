@@ -13,7 +13,10 @@ export const handlers = [
     }
 
     if (username === 'admin' && password === '12345') {
-      return res(ctx.status(200), ctx.json({ message: 'Success' }))
+      return res(
+        ctx.status(200),
+        ctx.json({ message: 'Success', username: username, password: password })
+      )
     } else {
       return res(
         ctx.status(401),

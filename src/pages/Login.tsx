@@ -1,9 +1,13 @@
 import { useRef, useState, useEffect } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import axios from '../api/axios'
+import { useDispatch } from 'react-redux'
+import { setUser } from '../store/appSlice'
+
 const LOGIN_URL = '/auth'
 
 const Login = () => {
+  const dispatch = useDispatch()
   const userRef = useRef<any>()
   const errRef = useRef<any>()
   const [username, setUsername] = useState('')
@@ -21,32 +25,32 @@ const Login = () => {
   }, [username, password])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault()
-      try {
-        const response = await axios.post(
-          LOGIN_URL,
-          JSON.stringify({ username, password }),
-          {
-            headers: { 'Content-Type': 'application/json' },
-            withCredentials: true,
-          }
-        )
-        console.log(JSON.stringify(response?.data))
-        setUsername('')
-        setPassword('')
-        setSuccess(true)
-      } catch (err: any) {
-        if (!err?.response) {
-          setErrMsg('No Server Response')
-        } else if (err.response?.status === 400) {
-          setErrMsg('Missing Username or Password')
-        } else if (err.response?.status === 401) {
-          setErrMsg('Wrong username or password')
-        } else {
-          setErrMsg('Login Failed')
+    e.preventDefault()
+    try {
+      const response = await axios.post(
+        LOGIN_URL,
+        JSON.stringify({ username, password }),
+        {
+          headers: { 'Content-Type': 'application/json' },
+          withCredentials: true,
         }
-        errRef.current.focus()
+      )
+      setUsername('')
+      setPassword('')
+      setSuccess(true)
+      dispatch(setUser(response?.data.username))
+    } catch (err: any) {
+      if (!err?.response) {
+        setErrMsg('No Server Response')
+      } else if (err.response?.status === 400) {
+        setErrMsg('Missing Username or Password')
+      } else if (err.response?.status === 401) {
+        setErrMsg('Wrong username or password')
+      } else {
+        setErrMsg('Login Failed')
       }
+      errRef.current.focus()
+    }
   }
 
   const handleUserInput = (e: React.FormEvent<HTMLInputElement>) =>
@@ -117,7 +121,6 @@ const Login = () => {
                 <button
                   className='w-1/2 px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900'
                   type='submit'
-                  role='button'
                   name='submit'
                 >
                   SUBMIT

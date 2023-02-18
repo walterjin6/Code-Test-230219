@@ -55,8 +55,4 @@ export const menuItems = [
       },
     ],
   },
-  {
-    title: 'Login',
-    url: '/login',
-  },
 ]
