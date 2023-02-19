@@ -2,13 +2,13 @@
 
 The project aims to create a login page and a navigation header with nested menu, establish routing between pages. The project also includes a login form that enables the user to complete the login process.
 
-The application is hosted [here](https://search-hacker-news.herokuapp.com).
+The application is hosted [here](https://main.d2m7hc27mf8dls.amplifyapp.com/).
 
 ## Features
 
-After the page is loaded, you can navigate the web pages by clicking the menu button on the navigation header bar.
+After the page is loaded, you can navigate the web pages by clicking the nested menu buttons on the navigation header bar.
 
-Click the Login button, Login form will be displayed.  The login logic is as follows:
+Click the Login button, Login form will be displayed.  The login logic are as follows:
 
 1. If username or password is wrong, "Wrong username or password" will be displayed.
 2. If username is "admin" and password is "12345", "You are logged in!" will be displayed, and Login button on Navbar will be changed to "Welcome, admin!"
@@ -37,8 +37,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 1. TypeScript: Programming Language
 2. React: To construct UI components
 3. React Router: To navigate between pages
-4. Redux Toolkit: To share user name accross components
+4. Redux Toolkit: To share username info across components
 5. TailwindCSS: To style the UI
 6. Axios: To make HTTP requests
-7. MSW (Mock Service Worker): To mock APIs and web products.
+7. MSW (Mock Service Worker): To mock APIs and web requests.
 8. Jest: To run tests and provide test coverage

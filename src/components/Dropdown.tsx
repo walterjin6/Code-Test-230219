@@ -5,16 +5,6 @@ type PropsType = {
   dropdown: boolean
   depthLevel: number
 }
-export interface CommonProps {
-  name: string
-  href: string
-}
-
-export interface MyProps {
-  name: string
-  on: boolean
-  children: Array<CommonProps>
-}
 
 const Dropdown = ({ submenus, dropdown, depthLevel }: PropsType) => {
   depthLevel = depthLevel + 1
